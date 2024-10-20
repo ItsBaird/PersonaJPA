@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <h1>JPA Aplication</h1>
+
+    <table>
+        <tr>
+            <td>Para Ver Información de una Persona</td>
+            <td><input type="button" value="Ver Información" th:onclick="|window.location.href='@{/formSelect}'|" /></td>
+        </tr>
+        <tr>
+            <td>Para Ver Información de Todas las Personas</td>
+            <td><input type="button" value="Ver Todo" th:onclick="|window.location.href='@{/selectAll}'|" /></td>
+        </tr>
+        <tr>
+            <td>Para Registrar una persona</td>
+            <td><input type="button" value="Registrar" th:onclick="|window.location.href='@{/formInsert}'|" /></td>
+        </tr>
+        <tr>
+            <td>Para Eliminar una persona</td>
+            <td><input type="button" value="Eliminar" th:onclick="|window.location.href='@{/formDelete}'|" /></td>
+        </tr>
+    </table>
+</body>
+</html>

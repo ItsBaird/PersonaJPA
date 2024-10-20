@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Persona Encontrada</title>
+</head>
+<body>
+  <h1>Detalles de la Persona</h1>
+  <p th:text="'ID: ' + ${persona.id}"></p>
+  <p th:text="'Nombre: ' + ${persona.nombre}"></p>
+  <p th:text="'Apellido: ' + ${persona.apellido}"></p>
+  <p th:text="'Email: ' + ${persona.email}"></p>
+
+  <a th:href="@{/formSelect}">Buscar otra persona</a>
+</body>
+</html>

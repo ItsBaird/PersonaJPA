@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formDelete</title>
+</head>
+<body>
+    <h1>Eliminar Persona</h1>
+    <form method="post" th:action="@{/deletePersona}">
+        <table>
+            <tr>
+                <td>Ingrese la ID de la persona que desea eliminar:</td>
+                <td><input type="number" name="id" id="id"/></td>
+            </tr>
+        </table>
+        <button type="submit">Eliminar Persona</button>
+    </form>
+
+</body>
+</html>

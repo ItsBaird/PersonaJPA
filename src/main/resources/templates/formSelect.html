@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Persona</title>
+</head>
+<body>
+<h1>Buscar Persona</h1>
+<form th:action="@{/mostrarPersona}" method="get">
+    <label for="id">Ingrese ID de la Persona:</label>
+    <input type="number" id="id" name="id">
+    <button type="submit">Buscar</button>
+</form>
+</body>
+</html>
